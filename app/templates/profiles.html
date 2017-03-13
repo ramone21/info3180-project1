@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+ 
+{% block main %}
+    <h3>These are the list of all profiles:</h3>
+    <ul>
+        {% for profile in profiles %}
+            <li>{{profile}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
